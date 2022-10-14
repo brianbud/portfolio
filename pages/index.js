@@ -10,8 +10,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className='bg-blue-700 min-h-screen'>
-
+        <section className='min-h-screen'>
+          <nav>
+            <h1>Brian Buddhadasa</h1>
+            <ul>
+              <li></li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+          </nav>
         </section>
       </main>
     </div>
