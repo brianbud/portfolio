@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import {BsFillMoonStarsFill} from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
           <nav>
             <h1>Brian Buddhadasa</h1>
             <ul>
-              <li></li>
+              <li><BsFillMoonStarsFill/></li>
               <li><a href="#">Resume</a></li>
             </ul>
           </nav>
