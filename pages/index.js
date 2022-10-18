@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image';
+import avatar from '../public/avatar.png'
 
 export default function Home() {
   return (
@@ -20,15 +22,18 @@ export default function Home() {
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
-          <div>
-            <h2>Brian Buddhadasa</h2>
-            <h3>Web Developer</h3>
-            <p>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Brian Buddhadasa</h2>
+            <h3 className='text-2xl py-2'>Web Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
-          <div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin/>
             <AiFillTwitterCircle/>
             <AiFillGithub/>
+          </div>
+          <div className='relative mx-auto w-80 h-80 mt-10'>
+            <Image className='rounded-full' layout='fill' objectFit='cover' src={avatar}/>
           </div>
         </section>
       </main>
