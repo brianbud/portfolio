@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 
 export default function Home() {
   return (
@@ -23,6 +24,11 @@ export default function Home() {
             <h2>Brian Buddhadasa</h2>
             <h3>Web Developer</h3>
             <p>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+          </div>
+          <div>
+            <AiFillLinkedin/>
+            <AiFillTwitterCircle/>
+            <AiFillGithub/>
           </div>
         </section>
       </main>
