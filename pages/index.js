@@ -2,7 +2,10 @@ import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image';
-import avatar from '../public/avatar.png'
+import avatar from '../public/avatar.png';
+import design from '../public/design.png';
+import code from '../public/code.png';
+import consulting from '../public/consulting.png';
 
 export default function Home() {
   return (
@@ -29,11 +32,49 @@ export default function Home() {
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin/>
-            <AiFillTwitterCircle/>
             <AiFillGithub/>
+            <AiFillTwitterCircle/>
           </div>
           <div className='relative mx-auto w-80 h-80 mt-10'>
             <Image className='rounded-full' layout='fill' objectFit='cover' src={avatar}/>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Skills</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={code} width={100} height={100}/>
+              <h3 className='text-large font-medium pt-8 pb-2'>Designs</h3>
+              <p className='py-2'>iste incidunt aspernatur esse sequi facere corporis pariatur deserunt velit eius dolor fuga tempora quas ipsum ab.</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>HTML</p>
+              <p className='text-gray-800 py-1'>CSS</p>
+              <p className='text-gray-800 py-1'>JavaScript</p>
+              <p className='text-gray-800 py-1'>React</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100}/>
+              <h3 className='text-large font-medium pt-8 pb-2'>Designs</h3>
+              <p className='py-2'>iste incidunt aspernatur esse sequi facere corporis pariatur deserunt velit eius dolor fuga tempora quas ipsum ab.</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>HTML</p>
+              <p className='text-gray-800 py-1'>CSS</p>
+              <p className='text-gray-800 py-1'>JavaScript</p>
+              <p className='text-gray-800 py-1'>React</p>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={consulting} width={100} height={100}/>
+              <h3 className='text-large font-medium pt-8 pb-2'>Designs</h3>
+              <p className='py-2'>iste incidunt aspernatur esse sequi facere corporis pariatur deserunt velit eius dolor fuga tempora quas ipsum ab.</p>
+              <h4 className='py-4 text-teal-600'>Tools I use</h4>
+              <p className='text-gray-800 py-1'>HTML</p>
+              <p className='text-gray-800 py-1'>CSS</p>
+              <p className='text-gray-800 py-1'>JavaScript</p>
+              <p className='text-gray-800 py-1'>React</p>
+            </div>
           </div>
         </section>
       </main>
