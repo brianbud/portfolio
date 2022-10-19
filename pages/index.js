@@ -83,17 +83,37 @@ export default function Home() {
         <section>
           <div>
           <h3 className='text-3xl py-1'>Projects</h3>
-          <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+          <p className='text-md py-1 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
           <div>
-            <div>
+            <div className='text-center shadow-lg rounded-xl my-5'>
               <Image src={web1}/>
+              <h2 className='text-2xl'>Project name</h2>
+              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
+              <ul className='flex items-center justify-center p-5'>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
+              </ul>
             </div>
             <div>
+            <div className='text-center shadow-lg rounded-xl my-10'>
               <Image src={web2}/>
+              <h2 className='text-2xl'>Project name</h2>
+              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
+              <ul className='flex items-center justify-center p-5'>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
+              </ul>
             </div>
-            <div>
+            </div>
+            <div className='text-center shadow-lg rounded-xl my-10'>
               <Image src={web3}/>
+              <h2 className='text-2xl'>Project name</h2>
+              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
+              <ul className='flex items-center justify-center p-5'>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
+                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
+              </ul>
             </div>
           </div>
         </section>
