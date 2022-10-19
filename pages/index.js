@@ -6,6 +6,9 @@ import avatar from '../public/avatar.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
+import web1 from '../public/web1.png';
+import web2 from '../public/web2.png';
+import web3 from '../public/web3.png';
 
 export default function Home() {
   return (
@@ -74,6 +77,23 @@ export default function Home() {
               <p className='text-gray-800 py-1'>CSS</p>
               <p className='text-gray-800 py-1'>JavaScript</p>
               <p className='text-gray-800 py-1'>React</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+          <h3 className='text-3xl py-1'>Projects</h3>
+          <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+          </div>
+          <div>
+            <div>
+              <Image src={web1}/>
+            </div>
+            <div>
+              <Image src={web2}/>
+            </div>
+            <div>
+              <Image src={web3}/>
             </div>
           </div>
         </section>
