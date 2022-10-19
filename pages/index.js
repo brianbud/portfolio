@@ -9,6 +9,7 @@ import consulting from '../public/consulting.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
+import web4 from '../public/web4.png';
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-60'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>Brian Bud</h1>
@@ -29,17 +30,17 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Brian Buddhadasa</h2>
-            <h3 className='text-2xl py-2'>Web Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Brian Buddhadasa</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Web Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin/>
             <AiFillGithub/>
             <AiFillTwitterCircle/>
           </div>
-          <div className='relative mx-auto w-80 h-80 mt-10'>
-            <Image className='rounded-full' layout='fill' objectFit='cover' src={avatar}/>
+          <div className='relative mx-auto w-80 h-80 mt-10 md:h-96 md:w-96'>
+            <Image className='rounded-full' layout='fill' objectFit='cover' src={avatar} />
           </div>
         </section>
         <section>
@@ -47,7 +48,7 @@ export default function Home() {
             <h3 className='text-3xl py-1'>Skills</h3>
             <p className='text-md py-5 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
-          <div>
+          <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={code} width={100} height={100}/>
               <h3 className='text-large font-medium pt-8 pb-2'>Designs</h3>
@@ -80,40 +81,50 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="py-10">
           <div>
-          <h3 className='text-3xl py-1'>Projects</h3>
-          <p className='text-md py-1 leading-8 text-gray-800'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+            <h3 className="text-3xl py-1">Portofolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              I offer from a wide range of services, including brand design,
+              programming and teaching.
+            </p>
           </div>
-          <div>
-            <div className='text-center shadow-lg rounded-xl my-5'>
-              <Image src={web1}/>
-              <h2 className='text-2xl'>Project name</h2>
-              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
-              <ul className='flex items-center justify-center p-5'>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
-              </ul>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1 ">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web1}
+              />
             </div>
-            <div>
-            <div className='text-center shadow-lg rounded-xl my-10'>
-              <Image src={web2}/>
-              <h2 className='text-2xl'>Project name</h2>
-              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
-              <ul className='flex items-center justify-center p-5'>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
-              </ul>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}
+              />
             </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+              />
             </div>
-            <div className='text-center shadow-lg rounded-xl my-10'>
-              <Image src={web3}/>
-              <h2 className='text-2xl'>Project name</h2>
-              <p className='px-5'>This project can help solve this problem. It is made with the following language</p>
-              <ul className='flex items-center justify-center p-5'>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md' href="#">Demo</a></li>
-                <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-12 py-2 rounded-md ml-8' href="#">Code</a></li>
-              </ul>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}
+              />
             </div>
           </div>
         </section>
