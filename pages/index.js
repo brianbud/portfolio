@@ -27,7 +27,7 @@ export default function Home() {
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons dark:text-white'>Brian Bud</h1>
             <ul className='flex items-center'>
-              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/></li>
+              <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/></li>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
             </ul>
           </nav>
@@ -92,7 +92,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -100,8 +100,12 @@ export default function Home() {
                 layout="responsive"
                 src={web1}
               />
-              <h3>Project name</h3>
-              <p>This project is made to help with this problem and is made with these languages</p>
+              <h3 className='text-center text-2xl dark:text-white'>Project name</h3>
+              <p className='dark:text-white'>This project is made to help with this problem and is made with these languages</p>
+              <ul className='flex items-center justify-center py-5'>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-0' href="#">Demo</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-5' href="#">Code</a></li>
+            </ul>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -111,6 +115,12 @@ export default function Home() {
                 layout="responsive"
                 src={web2}
               />
+               <h3 className='text-center text-2xl dark:text-white'>Project name</h3>
+              <p className='dark:text-white'>This project is made to help with this problem and is made with these languages</p>
+              <ul className='flex items-center justify-center py-5'>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-0' href="#">Demo</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-5' href="#">Code</a></li>
+            </ul>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -120,6 +130,12 @@ export default function Home() {
                 layout="responsive"
                 src={web3}
               />
+               <h3 className='text-center text-2xl dark:text-white'>Project name</h3>
+              <p className='dark:text-white'>This project is made to help with this problem and is made with these languages</p>
+              <ul className='flex items-center justify-center py-5'>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-0' href="#">Demo</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-5' href="#">Code</a></li>
+            </ul>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -129,6 +145,12 @@ export default function Home() {
                 layout="responsive"
                 src={web4}
               />
+               <h3 className='text-center text-2xl dark:text-white'>Project name</h3>
+              <p className='dark:text-white'>This project is made to help with this problem and is made with these languages</p>
+              <ul className='flex items-center justify-center py-5'>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-0' href="#">Demo</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-5' href="#">Code</a></li>
+            </ul>
             </div>
           </div>
         </section>
