@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import {SiHashnode} from 'react-icons/si'
 import Image from 'next/image';
 import avatar from '../public/avatar.png';
 import design from '../public/design.png';
@@ -37,9 +38,10 @@ export default function Home() {
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-50'>
-            <AiFillLinkedin/>
-            <AiFillGithub/>
-            <AiFillTwitterCircle/>
+            <a href='https://www.linkedin.com/in/brianbud/' target='_blank'><AiFillLinkedin/></a>
+            <a href='https://github.com/brianbud' target='_blank'><AiFillGithub/></a>
+            <a href='https://brianbud.hashnode.dev/' target='_blank'><SiHashnode/></a>
+            <a href='https://twitter.com/brianbud_' target='_blank'><AiFillTwitterCircle/></a>
           </div>
           <div className='relative mx-auto w-80 h-80 mt-10 md:h-96 md:w-96'>
             <Image className='rounded-full' layout='fill' objectFit='cover' src={avatar} />
@@ -47,7 +49,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1 dark:text-white'>Skills</h3>
+            <h3 className='text-3xl pt-10 dark:text-white'>Skills</h3>
             <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
           <div className='lg:flex gap-10'>
@@ -85,7 +87,7 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including brand design,
               programming and teaching.
