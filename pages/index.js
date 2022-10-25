@@ -29,7 +29,7 @@ export default function Home() {
             <h1 className='text-xl font-burtons dark:text-white'>Brian Bud</h1>
             <ul className='flex items-center'>
               <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#" target='_blank'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
@@ -37,7 +37,7 @@ export default function Home() {
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Web Developer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-50'>
+          <div className='text-5xl flex justify-center gap-16 py-3 pt-0 text-gray-600 dark:text-gray-50'>
             <a href='https://www.linkedin.com/in/brianbud/' target='_blank'><AiFillLinkedin/></a>
             <a href='https://github.com/brianbud' target='_blank'><AiFillGithub/></a>
             <a href='https://brianbud.hashnode.dev/' target='_blank'><SiHashnode/></a>
@@ -85,10 +85,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-10">
+        <section className="py-0">
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-md leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
@@ -149,13 +149,17 @@ export default function Home() {
               />
                <h3 className='text-center text-2xl dark:text-white'>Project name</h3>
               <p className='dark:text-white'>This project is made to help with this problem and is made with these languages</p>
-              <ul className='flex items-center justify-center py-5'>
+              <ul className='flex items-center justify-center pt-5'>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-0' href="#">Demo</a></li>
               <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-5' href="#">Code</a></li>
             </ul>
             </div>
           </div>
         </section>
+        <div className='text-center pb-10 '>
+            <h3 className='text-2xl md:text-3xl dark:text-white'>If you like what you see, feel free to contact me:</h3>
+            <h2 className='text-2xl text-teal-600 font-medium md:text-5xl'><a href='mailto:hello@brianbud.com'>hello@brianbud.com</a></h2>
+          </div>
       </main>
     </div>
   );
