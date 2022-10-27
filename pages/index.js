@@ -35,7 +35,8 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-700'>Brian Buddhadasa</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>I am a web developer</p>
+            <p className='text-xl py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Hello, I am a web developer based in Toronto, Canada. Two things I enjoy are always learning and creating, thus 
+            I'm open to learning more from others and to be part of a team that create cool solutions to interesting problems.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 pt-0 text-gray-600 dark:text-gray-50'>
             <a href='https://www.linkedin.com/in/brianbud/' target='_blank'><AiFillLinkedin/></a>
@@ -49,8 +50,11 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl pt-10 dark:text-white'>Skills</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 dark:text-white'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+            <h3 className='text-3xl pt-10 dark:text-white'>About me</h3>
+            <p className='text-md pb-5 leading-8 text-gray-800 dark:text-white'>I'm a lifelong learner and creator.</p>
+            <p className='text-md leading-8 text-gray-800 dark:text-white'>I have a Bachelor's degree in Business Administration, a diploma in Marketing and my interest is in Software Development.
+            At a young age, I enjoyed creating whether it's through arts, music or videos. I also was always interested in Tech, from reading Techcrunch daily to watching Tech Youtubers.
+            Coding scratches that itch of being able to create something cool with just a laptop and internet; I enjoy being resourceful.</p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
@@ -60,18 +64,19 @@ export default function Home() {
               <h4 className='py-4 text-teal-600'>Tools I use</h4>
               <p className='text-gray-800 py-1'>HTML</p>
               <p className='text-gray-800 py-1'>CSS</p>
+              <p className='text-gray-800 py-1'>Tailwind</p>
               <p className='text-gray-800 py-1'>JavaScript</p>
               <p className='text-gray-800 py-1'>React</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <Image src={design} width={100} height={100}/>
-              <h3 className='text-large font-medium pt-8 pb-2'>Designs</h3>
+              <h3 className='text-large font-medium pt-8 pb-2'>Complimentary skills</h3>
               <p className='py-2'>iste incidunt aspernatur esse sequi facere corporis pariatur deserunt velit eius dolor fuga tempora quas ipsum ab.</p>
               <h4 className='py-4 text-teal-600'>Tools I use</h4>
-              <p className='text-gray-800 py-1'>HTML</p>
-              <p className='text-gray-800 py-1'>CSS</p>
-              <p className='text-gray-800 py-1'>JavaScript</p>
-              <p className='text-gray-800 py-1'>React</p>
+              <p className='text-gray-800 py-1'>2 years in Sales</p>
+              <p className='text-gray-800 py-1'>Customer Service</p>
+              <p className='text-gray-800 py-1'>Leadership roles</p>
+              <p className='text-gray-800 py-1'>Googling</p>
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <Image src={consulting} width={100} height={100}/>
@@ -81,16 +86,16 @@ export default function Home() {
               <p className='text-gray-800 py-1'>HTML</p>
               <p className='text-gray-800 py-1'>CSS</p>
               <p className='text-gray-800 py-1'>JavaScript</p>
+              <p className='text-gray-800 py-1'>Tailwind</p>
               <p className='text-gray-800 py-1'>React</p>
             </div>
           </div>
         </section>
         <section className="py-0">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
             <p className="text-md leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Some projects I'm proud to showcase
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap ">
@@ -157,7 +162,7 @@ export default function Home() {
           </div>
         </section>
         <div className='text-center pb-10 '>
-            <h3 className='text-2xl md:text-3xl dark:text-white'>If you like what you see, feel free to contact me:</h3>
+            <h3 className='text-2xl md:text-3xl dark:text-white'>Get In Touch</h3>
             <h2 className='font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-600'><a href='mailto:hello@brianbud.com'>hello@brianbud.com</a></h2>
           </div>
        </main>
