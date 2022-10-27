@@ -33,9 +33,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Brian Buddhadasa</h2>
-            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Web Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>Quisquam atque totam saepe voluptas non praesentium reiciendis cumque officia quis ab magnam deleniti provident iusto, possimus cum iure repellat rem quod?</p>
+            <h2 className='font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-700'>Brian Buddhadasa</h2>
+            <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white'>I am a web developer</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 pt-0 text-gray-600 dark:text-gray-50'>
             <a href='https://www.linkedin.com/in/brianbud/' target='_blank'><AiFillLinkedin/></a>
@@ -158,9 +158,20 @@ export default function Home() {
         </section>
         <div className='text-center pb-10 '>
             <h3 className='text-2xl md:text-3xl dark:text-white'>If you like what you see, feel free to contact me:</h3>
-            <h2 className='text-2xl text-teal-600 font-medium md:text-5xl'><a href='mailto:hello@brianbud.com'>hello@brianbud.com</a></h2>
+            <h2 className='font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-600'><a href='mailto:hello@brianbud.com'>hello@brianbud.com</a></h2>
           </div>
-      </main>
+       </main>
+       <footer class="text-center bg-gradient-to-r from-cyan-900 to-teal-900">
+            <div class="pt-5 flex justify-center gap-4 ">
+                <a class="link link-hover" target='_blank' href='https://www.linkedin.com/in/brianbud/'>LinkedIn</a> 
+                <a class="link link-hover" target='_blank' href='https://github.com/brianbud'>Github</a> 
+                <a class="link link-hover" target='_blank' href='https://brianbud.hashnode.dev/'>Blog</a> 
+                <a class="link link-hover" target='_blank' href='https://twitter.com/brianbud_'>Twitter</a>
+            </div> 
+            <div class='pb-5'>
+              <p>Portfolio made with NextJS and Tailwind</p>
+            </div>
+          </footer>
     </div>
   );
 }
